@@ -31,5 +31,7 @@ public class BookingService {
         booking.setDate(request.getDate());
         booking.setPersons(request.getPersons());
 
+        bookingRepository.save(booking);
+
     }
 }
