@@ -5,12 +5,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.UUID;
 
 @Table(name = "bookings")
 @Entity
 @Getter
+@Setter
 public class Booking {
 
     // ID for booking
