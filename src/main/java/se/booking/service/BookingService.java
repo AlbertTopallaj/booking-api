@@ -19,5 +19,7 @@ public class BookingService {
         booking.setPersons(request.getPersons());
 
         bookingRepository.save(booking);
+
+        return booking;
     }
 }
