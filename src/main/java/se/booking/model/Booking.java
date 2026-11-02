@@ -21,5 +21,8 @@ public class Booking {
 
     private String email;
 
+    private int persons;
+
+
 
 }
