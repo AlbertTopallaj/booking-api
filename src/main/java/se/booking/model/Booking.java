@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 import se.booking.util.Status;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Table(name = "bookings")
@@ -21,6 +22,8 @@ public class Booking {
     private UUID id;
 
     private String email;
+
+    private LocalDateTime date;
 
     private int persons;
 
