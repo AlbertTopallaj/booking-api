@@ -10,6 +10,6 @@ import se.booking.model.Booking;
 public class BookingService {
 
     public Booking createBooking(BookingRequest request) {
-
+        Booking booking = new Booking();
     }
 }
