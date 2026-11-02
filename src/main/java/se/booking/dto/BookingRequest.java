@@ -11,5 +11,5 @@ import java.time.LocalDateTime;
 public class BookingRequest {
     private String email;
     private LocalDateTime date;
-
+    private int persons;
 }
