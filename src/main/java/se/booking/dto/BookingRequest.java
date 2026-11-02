@@ -6,4 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class BookingRequest {
+    private String email;
+
 }
