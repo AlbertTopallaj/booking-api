@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/booking")
+@RequestMapping("/bookings")
 @AllArgsConstructor
 public class BookingController {
 }
