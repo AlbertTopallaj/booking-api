@@ -7,6 +7,7 @@ import se.booking.model.Booking;
 import se.booking.repository.BookingRepository;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -43,5 +44,9 @@ public class BookingService {
 
     public List<Booking> getBookings() {
         return bookingRepository.findAll();
+    }
+
+    public Optional<Booking> getBookingById(UUID bookingId){
+        return bookingRepository.findById(bookingId);
     }
 }
