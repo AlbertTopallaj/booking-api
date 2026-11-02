@@ -28,6 +28,8 @@ public class BookingService {
     public Booking updateBooking(UUID bookingId, BookingRequest request) {
         Booking booking = bookingRepository.findById(bookingId).orElseThrow();
 
+        booking.setDate(request.getDate());
+        booking.setPersons(request.getPersons());
 
     }
 }
