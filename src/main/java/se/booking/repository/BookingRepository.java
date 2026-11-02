@@ -1,7 +1,11 @@
 package se.booking.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import se.booking.model.Booking;
+
+import java.util.UUID;
 
 @Repository
-public class BookingRepository {
+public interface BookingRepository extends JpaRepository<Booking, UUID> {
 }
