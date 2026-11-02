@@ -35,4 +35,8 @@ public class BookingService {
 
         return booking;
     }
+
+    public void deleteBooking(UUID bookingId){
+        bookingRepository.deleteById(bookingId);
+    }
 }
