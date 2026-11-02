@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import se.booking.util.Status;
 
 import java.util.UUID;
 
@@ -23,6 +24,6 @@ public class Booking {
 
     private int persons;
 
-
+    private Status bookingStatus;
 
 }
