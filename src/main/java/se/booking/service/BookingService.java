@@ -11,5 +11,8 @@ public class BookingService {
 
     public Booking createBooking(BookingRequest request) {
         Booking booking = new Booking();
+        booking.setEmail(request.getEmail());
+
+        booking.setPersons(request.getPersons());
     }
 }
