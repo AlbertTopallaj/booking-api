@@ -3,6 +3,7 @@ package se.booking.service;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import se.booking.dto.BookingRequest;
+import se.booking.dto.StatusRequest;
 import se.booking.model.Booking;
 import se.booking.repository.BookingRepository;
 import se.booking.util.Status;
@@ -40,7 +41,7 @@ public class BookingService {
         return booking;
     }
 
-    public Booking changeStatusOfBooking(UUID bookingId, BookingRequest request){
+    public Booking changeStatusOfBooking(UUID bookingId, StatusRequest request){
         Booking booking = bookingRepository.findById(bookingId).orElseThrow();
 
         booking.setBookingStatus(request.getStatus());

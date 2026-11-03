@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.web.bind.annotation.*;
 import se.booking.dto.BookingRequest;
+import se.booking.dto.StatusRequest;
 import se.booking.model.Booking;
 import se.booking.service.BookingService;
 
@@ -24,8 +25,8 @@ public class BookingController {
     }
 
     @PatchMapping("/change-status/{bookingId}")
-    public Booking changeStatusOfBooking(@RequestBody BookingRequest bookingRequest, @PathVariable UUID bookingId){
-        return bookingService.changeStatusOfBooking(bookingId, bookingRequest);
+    public Booking changeStatusOfBooking(@RequestBody StatusRequest statusRequest, @PathVariable UUID bookingId){
+        return bookingService.changeStatusOfBooking(bookingId, statusRequest);
     }
 
     @PatchMapping("/update/{bookingId}")
