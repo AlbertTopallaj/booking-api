@@ -23,6 +23,11 @@ public class BookingController {
         return bookingService.createBooking(bookingRequest);
     }
 
+    @PatchMapping("/change-status/{bookingId}")
+    public Booking changeStatusOfBooking(@RequestBody BookingRequest bookingRequest, @PathVariable UUID bookingId){
+        return bookingService.changeStatusOfBooking(bookingId, bookingRequest);
+    }
+
     @PatchMapping("/update/{bookingId}")
     public Booking updateBooking(@RequestBody BookingRequest bookingRequest, @PathVariable UUID bookingId) {
         return bookingService.updateBooking(bookingId, bookingRequest);
