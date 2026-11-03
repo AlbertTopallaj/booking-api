@@ -8,6 +8,7 @@ import se.booking.model.Booking;
 import se.booking.service.BookingService;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @RestController
@@ -37,4 +38,8 @@ public class BookingController {
         return bookingService.getBookings();
     }
 
+    @GetMapping("/get/{bookingId}")
+    public Optional<Booking> getBookingsById(@PathVariable UUID bookingId){
+        return bookingService.getBookingById(bookingId);
+    }
 }
