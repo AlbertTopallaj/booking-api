@@ -40,6 +40,14 @@ public class BookingService {
         return booking;
     }
 
+    public Booking changeStatusOfBooking(UUID bookingId, BookingRequest request){
+        Booking booking = bookingRepository.findById(bookingId).orElseThrow();
+
+        booking.setBookingStatus(request.getStatus());
+
+        return booking;
+    }
+
     public void deleteBooking(UUID bookingId){
         bookingRepository.deleteById(bookingId);
     }
