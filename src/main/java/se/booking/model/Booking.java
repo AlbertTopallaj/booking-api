@@ -1,9 +1,6 @@
 package se.booking.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import se.booking.util.Status;
@@ -18,6 +15,7 @@ import java.util.UUID;
 public class Booking {
 
     // ID for booking
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
