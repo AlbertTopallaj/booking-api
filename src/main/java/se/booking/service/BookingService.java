@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import se.booking.dto.BookingRequest;
 import se.booking.model.Booking;
 import se.booking.repository.BookingRepository;
+import se.booking.util.Status;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,6 +22,7 @@ public class BookingService {
         booking.setEmail(request.getEmail());
         booking.setDate(request.getDate());
         booking.setPersons(request.getPersons());
+        booking.setBookingStatus(Status.PENDING);
 
         bookingRepository.save(booking);
 
