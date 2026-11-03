@@ -46,6 +46,8 @@ public class BookingService {
 
         booking.setBookingStatus(request.getStatus());
 
+        bookingRepository.save(booking);
+
         return booking;
     }
 
