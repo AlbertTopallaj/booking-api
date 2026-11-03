@@ -1,13 +1,12 @@
 package se.booking.controller;
 
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import se.booking.dto.BookingRequest;
 import se.booking.model.Booking;
 import se.booking.service.BookingService;
+
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/bookings")
@@ -19,6 +18,11 @@ public class BookingController {
     @PostMapping("/create-booking")
     public Booking createBooking(@RequestBody BookingRequest bookingRequest) {
         return bookingService.createBooking(bookingRequest);
+    }
+
+    @PatchMapping("/update/{bookingId}")
+    public Booking updateBooking(@RequestBody BookingRequest bookingRequest, @PathVariable UUID bookingId) {
+        return bookingService.updateBooking(bookingId, bookingRequest);
     }
 
 }
