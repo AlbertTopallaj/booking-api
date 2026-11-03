@@ -25,4 +25,9 @@ public class BookingController {
         return bookingService.updateBooking(bookingId, bookingRequest);
     }
 
+    @DeleteMapping("/delete/{bookingId}")
+    public void deleteBooking(@PathVariable UUID bookingId){
+        bookingService.deleteBooking(bookingId);
+    }
+
 }
