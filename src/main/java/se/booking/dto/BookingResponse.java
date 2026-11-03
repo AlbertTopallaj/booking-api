@@ -18,5 +18,4 @@ public class BookingResponse {
     private int persons;
 
     private Status bookingStatus;
-
 }
