@@ -7,3 +7,14 @@ services:
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     ports:
       - "5432:5432"
+
+  app:
+    build: .
+    ports:
+       - "${SERVER_PORT}:${SERVER_PORT}"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${DATABASE_NAME}
+      SPRING_DATASOURCE_USERNAME: ${DATABASE_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DATABASE_PASSWORD}
+    depends_on:
+     - db
