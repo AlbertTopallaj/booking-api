@@ -6,4 +6,4 @@ COPY . .
 
 RUN ./mvnw package -DskipTests
 
-CMD["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "target/*.jar"]
