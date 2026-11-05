@@ -19,11 +19,16 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
+    // Email for booking
     private String email;
 
+    // Date for booking
     private LocalDateTime date;
 
+    // The amount of persons that are in a booking
     private int persons;
 
+    // The booking status
+    // Can be PENDING, COMPLETED OR CANCELLED
     private Status bookingStatus;
 }
