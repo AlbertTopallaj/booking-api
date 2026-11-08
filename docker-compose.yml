@@ -11,6 +11,7 @@ services:
   api1:
     build: .
     environment:
+      INSTANCE_NAME: api1
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${DATABASE_NAME}
       SPRING_DATASOURCE_USERNAME: ${DATABASE_USER}
       SPRING_DATASOURCE_PASSWORD: ${DATABASE_PASSWORD}
@@ -20,6 +21,7 @@ services:
   api2:
     build: .
     environment:
+      INSTANCE_NAME: api2
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${DATABASE_NAME}
       SPRING_DATASOURCE_USERNAME: ${DATABASE_USER}
       SPRING_DATASOURCE_PASSWORD: ${DATABASE_PASSWORD}
@@ -29,6 +31,7 @@ services:
   api3:
     build: .
     environment:
+      INSTANCE_NAME: api3
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${DATABASE_NAME}
       SPRING_DATASOURCE_USERNAME: ${DATABASE_USER}
       SPRING_DATASOURCE_PASSWORD: ${DATABASE_PASSWORD}
