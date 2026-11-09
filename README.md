@@ -4,3 +4,6 @@
 
 ## What env vars are needed
 
+## How the database starts
+
+
