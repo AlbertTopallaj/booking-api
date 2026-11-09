@@ -9,3 +9,5 @@
 ## How three instances starts
 
 ## What adress to reach the API?
+
+## How GET /instance is used to test load balancing
