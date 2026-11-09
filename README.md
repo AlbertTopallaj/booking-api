@@ -16,6 +16,8 @@ The needed env vars are shown in `.env.example` file
 
 ## How the database starts
 
+The database which is a **_PostgreSQL_** database, starts automatically when starting the project
+
 ## How three instances starts
 
 ## What adress to reach the API?
