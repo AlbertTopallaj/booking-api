@@ -2,7 +2,17 @@
 
 ## How to start the project
 
+1. Clone the git repository using the following command in the terminal:
+
+`git clone https://github.com/AlbertTopallaj/booking-api`
+
+2. Start the project using the follow command in the terminal:
+
+`docker compose up`
+
 ## What env vars are needed
+
+The needed env vars are showed in `.env.example` file
 
 ## How the database starts
 
