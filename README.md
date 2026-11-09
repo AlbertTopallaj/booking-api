@@ -30,4 +30,6 @@ The API can be reached through the following adress
 
 ## How GET /instance is used to test load balancing
 
+When using the `GET /INSTANCE` endpoint, the output is which of the three instances are used, every new request shows a different instance. Which means that the load balancing is working and the three instances are in use.
+
 ## How one instance can go down to test that the API still works
