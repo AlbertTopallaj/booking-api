@@ -6,4 +6,5 @@
 
 ## How the database starts
 
+## How three instances starts
 
