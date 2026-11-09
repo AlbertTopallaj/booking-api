@@ -12,7 +12,7 @@
 
 ## What env vars are needed
 
-The needed env vars are showed in `.env.example` file
+The needed env vars are shown in `.env.example` file
 
 ## How the database starts
 
