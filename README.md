@@ -11,3 +11,5 @@
 ## What adress to reach the API?
 
 ## How GET /instance is used to test load balancing
+
+## How one instance can go down to test that the API still works
