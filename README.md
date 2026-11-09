@@ -24,6 +24,10 @@ The three instances are configured in the `docker-compose.yml` file, when starti
 
 ## What adress to reach the API?
 
+The API can be reached through the following adress
+
+`http://localhost:80`
+
 ## How GET /instance is used to test load balancing
 
 ## How one instance can go down to test that the API still works
