@@ -20,6 +20,8 @@ The database which is a **_PostgreSQL_** database, starts automatically when sta
 
 ## How three instances starts
 
+The three instances are configured in the `docker-compose.yml` file, when starting the project the three different instances becomes three containers.
+
 ## What adress to reach the API?
 
 ## How GET /instance is used to test load balancing
