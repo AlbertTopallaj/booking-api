@@ -20,6 +20,7 @@ public class BookingService {
 
     public Booking createBooking(BookingRequest request) {
         Booking booking = new Booking();
+        booking.setName(request.getName());
         booking.setEmail(request.getEmail());
         booking.setDate(request.getDate());
         booking.setPersons(request.getPersons());
