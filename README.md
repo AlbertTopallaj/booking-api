@@ -6,6 +6,10 @@
 
 `git clone https://github.com/AlbertTopallaj/booking-api`
 
+2. Create a `.env` file from the example file:
+
+`.env.example .env`
+
 3. Start the project using the follow command in the terminal:
 
 `docker compose up`
