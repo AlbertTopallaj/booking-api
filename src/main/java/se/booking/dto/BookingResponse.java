@@ -11,6 +11,8 @@ import java.time.LocalDateTime;
 public class BookingResponse {
     private String UUID;
 
+    private String name;
+
     private String email;
 
     private LocalDateTime date;
