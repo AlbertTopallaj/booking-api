@@ -18,6 +18,10 @@
 
 The needed env vars are shown in `.env.example` file
 
+- `DATABASE_NAME` - the name of the database
+- `DATAABASE_USER` - the database user
+- `DATABASE_PASSWORD` - the database password
+
 ## How the database starts
 
 The database which is a **_PostgreSQL_** database, starts automatically when starting the project
