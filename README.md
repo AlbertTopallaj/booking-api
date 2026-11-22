@@ -6,7 +6,7 @@
 
 `git clone https://github.com/AlbertTopallaj/booking-api`
 
-2. Start the project using the follow command in the terminal:
+3. Start the project using the follow command in the terminal:
 
 `docker compose up`
 
