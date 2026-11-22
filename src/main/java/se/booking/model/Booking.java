@@ -19,6 +19,9 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
+    // The name of the person who is booking
+    private String name;
+
     // Email for booking
     private String email;
 
