@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 public class BookingRequest {
+    private String name;
     private String email;
     private LocalDateTime date;
     private int persons;
